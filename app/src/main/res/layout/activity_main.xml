@@ -6,245 +6,267 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton13"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton11" />
-
-    <RadioButton
-        android:id="@+id/radioButton18"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
-
-    <RadioButton
-        android:id="@+id/radioButton19"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton11"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton15" />
-
-    <RadioButton
-        android:id="@+id/radioButton20"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton19" />
-
-    <RadioButton
-        android:id="@+id/radioButton21"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="46dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton24"
-        app:layout_constraintStart_toStartOf="@+id/radioButton24"
-        app:layout_constraintTop_toTopOf="@+id/radioButton24" />
-
-    <RadioButton
-        android:id="@+id/radioButton25"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton23"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton21" />
-
-    <RadioButton
-        android:id="@+id/radioButton26"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton22"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton25" />
-
-    <RadioButton
-        android:id="@+id/radioButton27"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton20" />
-
-    <RadioButton
-        android:id="@+id/radioButton28"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton29"
-        app:layout_constraintTop_toTopOf="@+id/radioButton4" />
-
-    <RadioButton
-        android:id="@+id/radioButton29"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="35dp"
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="7"
+        android:columnOrderPreserved="false"
+        android:padding="4dp"
+        android:rowCount="7"
+        android:rowOrderPreserved="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButton28" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <RadioButton
-        android:id="@+id/radioButton30"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton31"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton28" />
+        <TextView
+            android:id="@+id/textView1_1"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton31"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="35dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton29" />
+        <TextView
+            android:id="@+id/textView1_2"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton32"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton33"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton30" />
+        <TextView
+            android:id="@+id/textView1_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0"
+            android:textColorHighlight="#C1644797" />
 
-    <RadioButton
-        android:id="@+id/radioButton33"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButton31" />
+        <TextView
+            android:id="@+id/textView1_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton22"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton19"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton23" />
+        <TextView
+            android:id="@+id/textView1_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton23"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton15"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton24" />
+        <TextView
+            android:id="@+id/textView1_6"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton24"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="46dp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton2"
-        app:layout_constraintTop_toTopOf="@+id/radioButton2" />
+        <TextView
+            android:id="@+id/textView1_7"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton17"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton30"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+        <TextView
+            android:id="@+id/textView2_1"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton11"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton14"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton16" />
+        <TextView
+            android:id="@+id/textView2_2"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton12"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton13"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton13" />
+        <TextView
+            android:id="@+id/textView2_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton13"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton32"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton14" />
+        <TextView
+            android:id="@+id/textView2_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton14"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton32"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton17" />
+        <TextView
+            android:id="@+id/textView2_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton15"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton16"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        <TextView
+            android:id="@+id/textView2_6"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton10"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="150dp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton7"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView2_7"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton16"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton17"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        <TextView
+            android:id="@+id/textView3_1"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+        <TextView
+            android:id="@+id/textView3_2"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton4"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+        <TextView
+            android:id="@+id/textView3_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton28"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+        <TextView
+            android:id="@+id/textView3_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton6"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton8" />
+        <TextView
+            android:id="@+id/textView3_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton7"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton9" />
+        <TextView
+            android:id="@+id/textView3_6"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton28"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton10" />
+        <TextView
+            android:id="@+id/textView3_7"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="150dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton9"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView4_1"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
-    <RadioButton
-        android:id="@+id/radioButton9"
-        android:layout_width="46dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="150dp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton10"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView4_2"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
 
+        <TextView
+            android:id="@+id/textView4_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4_6"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4_7"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_1"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_2"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_6"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5_7"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_1"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_2"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_6"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6_7"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_1"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_2"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_3"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_4"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_5"
+            style="@style/GridLayoutTextViewStyle"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_6"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7_7"
+            style="@style/GridLayoutTextInvisible"
+            android:text="0" />
+
+
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
