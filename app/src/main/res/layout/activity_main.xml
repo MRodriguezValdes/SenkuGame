@@ -145,7 +145,7 @@
         <TextView
             android:id="@+id/textView4_4"
             style="@style/GridLayoutTextVoidCell"
-            android:tag="invisible"
+            android:tag="void"
             android:text=""
             android:clickable="true"/>
 
